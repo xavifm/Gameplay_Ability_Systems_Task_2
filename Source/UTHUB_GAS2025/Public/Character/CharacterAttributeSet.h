@@ -24,6 +24,11 @@ public:
 	FGameplayAttributeData Health;
 	ATTRIBUTE_ACCESSORS(UCharacterAttributeSet, Health)
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	FGameplayAttributeData Speed;
+	ATTRIBUTE_ACCESSORS(UCharacterAttributeSet, Speed)
+
 private:
-	const float MAX_HEALTH = 100;
+	const float BASE_HEALTH = 100;
+	const float BASE_SPEED = 50;
 };
